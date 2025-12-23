@@ -1,6 +1,6 @@
 <template>
   <v-container id="about" class="py-16">
-    <v-row justify="center">
+    <v-row>
       <v-col cols="12" class="text-center mb-10">
         <h2 class="text-h3 font-weight-bold">About Me</h2>
         <p class="text-medium-emphasis">
@@ -90,26 +90,8 @@
 <script setup>
 const history = [
   {
-    year: "2024 – PRESENT",
+    year: "Feb 2024 - PRESENT",
     title: "Full Stack Developer",
-    company: "Tech Solutions Inc.",
-    description:
-      "Developing enterprise-level dashboards using Vue 3 and Laravel. Implementing CI/CD pipelines with Docker.",
-    color: "primary",
-    icon: "mdi-briefcase",
-  },
-  {
-    year: "2021 – 2024",
-    title: "Computer Science Degree",
-    company: "Beltie Internation University",
-    description:
-      "Focused on Software Engineering, Data Structures, and Database Management Systems.",
-    color: "secondary",
-    icon: "mdi-school",
-  },
-  {
-    year: "2024 – PRESENT",
-    title: "Software Engineering Intern",
     company: "Sourceamax Asia",
     link: "https://www.sourceamax.asia/",
     description:
@@ -118,10 +100,29 @@ const history = [
     icon: "mdi-briefcase",
   },
   {
-    year: "2020",
+    year: "Oct 2024 - Jan 2026",
+    title: "Software Engineering Degree",
+    company: "Beltei International University",
+    description:
+      "Focused on Software Engineering, Data Structures, and Database Management Systems.",
+    color: "secondary",
+    icon: "mdi-school",
+  },
+  {
+    year: "Aug 2023 - Jan 2024",
+    title: "Software Engineer Intern",
+    company: "Sourceamax Asia",
+    link: "https://www.sourceamax.asia/",
+    description:
+      "Developing enterprise-level dashboards using Vue 3 and Laravel. Implementing CI/CD pipelines with Docker.",
+    color: "primary",
+    icon: "mdi-briefcase",
+  },
+  {
+    year: "Oct 2021 - Nov 2023",
     title: "Computer Science Associate Degree",
-    company: "University of Technology",
-    link: "https://www.university.edu",
+    company: "Passerelles numériques Cambodia",
+    link: "https://www.passerellesnumeriques.org/what-we-do/cambodia/",
     description:
       "Built custom WordPress themes and static sites for local small businesses.",
     color: "secondary",

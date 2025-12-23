@@ -2,6 +2,7 @@ html,
 body {
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
+  height: 100vh;
 }
 
 .text-body-1,

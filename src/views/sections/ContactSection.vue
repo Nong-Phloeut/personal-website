@@ -1,6 +1,6 @@
 <template>
   <v-container id="contact" class="py-16">
-    <v-row justify="center">
+    <v-row>
       <v-col cols="12" class="text-center mb-10">
         <h2 class="text-h3 font-weight-bold mb-2">Get In Touch</h2>
         <p class="text-medium-emphasis">Have a project in mind? Let's build something amazing together.</p>

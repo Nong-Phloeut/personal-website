@@ -47,8 +47,8 @@
         </div>
 
         <div class="mt-12 animate-up-delay-4">
-          <v-btn icon="mdi-github" variant="text" size="large" href="https://github.com/youruser" target="_blank" />
-          <v-btn icon="mdi-linkedin" variant="text" size="large" href="https://linkedin.com/in/youruser" target="_blank" />
+          <v-btn icon="mdi-github" variant="text" size="large" href="https://github.com/Nong-Phloeut" target="_blank" />
+          <v-btn icon="mdi-linkedin" variant="text" size="large" href="https://www.linkedin.com/in/nong-phloeut-34314b275/" target="_blank" />
           <v-btn icon="mdi-twitter" variant="text" size="large" href="#" target="_blank" />
         </div>
       </v-col>

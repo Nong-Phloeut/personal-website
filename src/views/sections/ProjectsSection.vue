@@ -134,6 +134,36 @@ const projects = [
     github: "#",
     live: "#",
   },
+  {
+    title: "Inventory Pro",
+    description:
+      "A full-scale warehouse management system with real-time stock tracking and automated PDF reporting.",
+    tech: ["Vue 3", "Laravel", "PostgreSQL", "Tailwind"],
+    image:
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800",
+    github: "#",
+    live: "#",
+  },
+  {
+    title: "EduTrack System",
+    description:
+      "Comprehensive school management platform featuring attendance tracking, grade portals, and teacher schedules.",
+    tech: ["Vue 3", "Vuetify", "Firebase", "Node.js"],
+    image:
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800",
+    github: "#",
+    live: "#",
+  },
+  {
+    title: "Health-Sync API",
+    description:
+      "A Dockerized Laravel API for medical clinics, supporting secure patient data encryption and RESTful architecture.",
+    tech: ["Laravel", "Docker", "MySQL", "Redis"],
+    image:
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800",
+    github: "#",
+    live: "#",
+  },
 ];
 </script>
 
