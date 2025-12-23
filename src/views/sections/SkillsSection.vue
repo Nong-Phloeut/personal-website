@@ -12,7 +12,7 @@
         <v-hover v-slot="{ isHovering, props }">
           <v-card
             v-bind="props"
-            :elevation="isHovering ? 8 : 2"
+            :elevation="isHovering ? 2 : 0"
             :class="{ 'on-hover': isHovering }"
             class="pa-6 text-center skill-card transition-swing"
             rounded="xl"

@@ -16,6 +16,10 @@
           :href="item.href"
           variant="text"
           class="mx-1 text-capitalize"
+          :class="{
+            'text-primary font-weight-bold':
+              currentSection === item.href.slice(1),
+          }"
         >
           {{ item.title }}
         </v-btn>
@@ -65,7 +69,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 import HomeSection from "./views/sections/HomeSection.vue";
 import AboutSection from "./views/sections/AboutSection.vue";
 import SkillsSection from "./views/sections/SkillsSection.vue";
@@ -86,14 +90,29 @@ const navItems = [
 function toggleTheme() {
   theme.value = theme.value === "light" ? "dark" : "light";
 }
+const currentSection = ref("home");
+const sections = ["home", "about", "skills", "projects", "contact"];
+
+function onScroll() {
+  const scrollPos = window.scrollY + 100; // offset for app bar height
+  for (const section of sections) {
+    const el = document.getElementById(section);
+    if (el) {
+      const top = el.offsetTop;
+      const bottom = top + el.offsetHeight;
+      if (scrollPos >= top && scrollPos < bottom) {
+        currentSection.value = section;
+        break;
+      }
+    }
+  }
+}
+
+onMounted(() => window.addEventListener("scroll", onScroll));
+onUnmounted(() => window.removeEventListener("scroll", onScroll));
 </script>
 
 <style>
-/* Smooth Scrolling for the whole page */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Glassmorphism Effect for Navbar */
 .navbar-blur {
   background-color: rgba(var(--v-theme-surface), 0.7) !important;
@@ -117,10 +136,5 @@ html {
   );
   pointer-events: none;
   z-index: 0;
-}
-
-/* Typography polish */
-.v-application {
-  font-family: "Poppins", sans-serif !important;
 }
 </style>

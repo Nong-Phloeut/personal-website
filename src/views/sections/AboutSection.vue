@@ -101,7 +101,7 @@ const history = [
   {
     year: "2021 – 2024",
     title: "Computer Science Degree",
-    company: "University of Technology",
+    company: "Beltie Internation University",
     description:
       "Focused on Software Engineering, Data Structures, and Database Management Systems.",
     color: "secondary",
@@ -124,8 +124,8 @@ const history = [
     link: "https://www.university.edu",
     description:
       "Built custom WordPress themes and static sites for local small businesses.",
-    color: "info",
-    icon: "mdi-palette",
+    color: "secondary",
+    icon: "mdi-school",
   },
 ];
 </script>
