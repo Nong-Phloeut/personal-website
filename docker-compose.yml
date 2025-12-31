@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  vue-app:
+    image: business-vue-web
+    container_name: business-vue-web
+    ports:
+      - "90:90"
+    restart: always
